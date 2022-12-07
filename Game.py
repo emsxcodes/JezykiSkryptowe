@@ -214,3 +214,4 @@ def test_sprawdzenie_czy_jest_izogramem(slowo):
 # Nasza gra rozpoczyna sie w tym miejscu od prostej instrukcji wyswietl menu ktora zawiera w sobie odnosnik
 
 wyswietl_menu()
+
