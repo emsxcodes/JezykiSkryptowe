@@ -1,0 +1,2 @@
+Liczba prob: 10 bulls:0, cows:0
+Liczba prob: 5 bulls:4 cows:0
