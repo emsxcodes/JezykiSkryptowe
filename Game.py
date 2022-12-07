@@ -204,9 +204,12 @@ def menu_wyboru():
 
 # Sprawdzenie poprawnosci dzialania validatora - jest kluczowe przed rozpoczeciem naszej gry
 
-@pytest.mark.parametrize("slowo", [("armia"),("ser"),("kareta"),("klasa"),("kraj")])
+@pytest.mark.parametrize("slowo", [("mikolaj"),("ser"),("jablko"),("klin"),("kraj"),("wiadro"),("kiwi"),("gra")])
 def test_sprawdzenie_czy_jest_izogramem(slowo):
     assert Validator.sprawdz_slowo(slowo) == True
+@pytest.mark.parametrize("slowo", [("armia"),("serpentyna"),("kareta"),("klasa"),("krajowa")])
+def test_sprawdzenie_czy_jest_izogramem(slowo):
+    assert Validator.sprawdz_slowo(slowo) == False
 
 # Nasza gra rozpoczyna sie w tym miejscu od prostej instrukcji wyswietl menu ktora zawiera w sobie odnosnik
 
